@@ -1,3 +1,5 @@
+var tl = gsap.timeline();
+
 function locoScroll() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -81,6 +83,45 @@ function page2Animation() {
   });
 }
 
+function swiperAnimation() {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+  });
+}
+
+tl.from("#loader h3", {
+  x: 70,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.02,
+});
+
+tl.to("#loader h3", {
+  opacity: 0,
+});
+
+tl.to("#loader", {
+  opacity: 0,
+});
+
+tl.from("#page1-content h1 span", {
+  y: 100,
+  opacity: 0,
+  stagger: 0.1,
+  delay: -0.5,
+});
+
+tl.to("#loader", {
+  display: "none",
+});
+
+swiperAnimation();
 locoScroll();
 cursorEffect();
 page2Animation();

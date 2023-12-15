@@ -21,6 +21,25 @@ body {
     height: 100%;
 }
 
+#loader{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background: #121212;
+    color: #dadada;
+    z-index: 99;
+    gap: .5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h3{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
 #page1 {
     height: 100vh;
     width: 100%;
@@ -91,6 +110,7 @@ nav h4 {
 
 #page1-content h1 span {
     font-family: re;
+    display: inline-block;
 }
 
 #page2 {
@@ -129,24 +149,24 @@ nav h4 {
     font-weight: 100;
 }
 
-#page3{
+#page3 {
     min-height: 100vh;
     width: 100%;
     position: relative;
     padding: 3vw;
 }
 
-.page3-top{
+.page3-top {
     text-align: center;
 }
 
-.page3-top h4{
+.page3-top h4 {
     margin-bottom: 1vw;
     font-size: 1vw;
     font-weight: 5 00;
 }
 
-.page3-top h4 span{
+.page3-top h4 span {
     font-size: 0.65vw;
     background-color: #000;
     color: #fff;
@@ -154,12 +174,12 @@ nav h4 {
     border-radius: 50px;
 }
 
-.page3-top h2{
+.page3-top h2 {
     font-size: 4vw;
     font-weight: 500;
 }
 
-#page3-elements{
+#page3-elements {
     height: 80vh;
     width: 100%;
     display: flex;
@@ -168,20 +188,20 @@ nav h4 {
     margin-top: 8vw;
 }
 
-#page3-elements .box{
+#page3-elements .box {
     height: 100%;
     width: 32.5%;
     position: relative;
 }
 
-#page3-elements .box video{
+#page3-elements .box video {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-#page3-elements .box img{
+#page3-elements .box img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -190,6 +210,100 @@ nav h4 {
     transition: all linear .3s;
 }
 
-#page3-elements .box:hover img{
+#page3-elements .box:hover img {
     opacity: 0;
+}
+
+#page4 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#page4-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+    width: 96%;
+    margin-left: 2%;
+}
+
+#page4-top h3 {
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 26%;
+    white-space: nowrap;
+    margin-top: 8vw;
+}
+
+.elem {
+    padding: 2vw 2vw;
+    overflow: hidden;
+}
+
+.elem h1 {
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page5 img {
+    height: 100%;
+}
+
+#page5 svg {
+    position: absolute;
+    height: 60%;
+}
+
+#page6 {
+    height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+    position: relative;
+}
+
+#page6-top h1 {
+    font-size: 10vw;
+    font-weight: 100;
+    font-family: re;
+    border-bottom: 1px solid #00000092;
+    width: 96%;
+    margin-left: 2%;
+}
+
+#swiperdiv {
+    height: 60vh;
+    width: 100%;
+    margin-top: -5%;
+
+}
+
+.swiper {
+    width: 130%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 18%;
+    object-fit: cover;
 }
